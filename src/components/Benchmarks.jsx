@@ -45,11 +45,9 @@ const Benchmarks = () => {
 
   return (
     <section className="bg-[#0A0E17] py-28 px-6 lg:px-20 text-white relative overflow-hidden">
-      {/* Background radial glow to match the image atmosphere */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-blue-900/10 rounded-full blur-[120px] pointer-events-none"></div>
 
       <div className="container mx-auto relative z-10 text-center">
-        {/* Header Section */}
         <div className="max-w-3xl mx-auto mb-20">
           <h2 className="text-4xl lg:text-6xl font-black mb-8 tracking-tight">
             Setting New <span className="text-[#E21D26] text-4xl ">Benchmarks</span>
@@ -59,7 +57,6 @@ const Benchmarks = () => {
           </p>
         </div>
 
-        {/* Stats Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {stats.map((stat, index) => (
             <div
@@ -70,7 +67,6 @@ const Benchmarks = () => {
                   : "bg-[#111827]/40 border border-white/5 backdrop-blur-sm"
               }`}
             >
-              {/* Icon Container */}
               <div
                 className={`w-12 h-12 rounded-2xl flex items-center justify-center mb-10 transition-colors ${
                   stat.isPrimary ? "bg-white/20" : "bg-white/5 text-[#E21D26]"
@@ -79,12 +75,10 @@ const Benchmarks = () => {
                 {stat.icon}
               </div>
 
-              {/* Package Value */}
               <div className="text-4xl font-black mb-3 tracking-tighter">
                 {stat.value}
               </div>
 
-              {/* Labels */}
               <div className="space-y-1">
                 <p className={`text-sm font-bold uppercase tracking-wide ${stat.isPrimary ? "text-white/90" : "text-gray-300"}`}>
                   {stat.label}
@@ -94,7 +88,6 @@ const Benchmarks = () => {
                 </p>
               </div>
 
-              {/* Subtle hover overlay for non-primary cards */}
               {!stat.isPrimary && (
                 <div className="absolute inset-0 bg-gradient-to-br from-white/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
               )}
