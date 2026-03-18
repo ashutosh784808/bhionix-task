@@ -29,7 +29,6 @@ const EnquiryForm = () => {
           </select>
         </div>
 
-        {/* Circular/Pill Button */}
         <button className="w-full bg-[#E21D26] hover:bg-red-700 text-white font-bold py-4 rounded-full transition-all shadow-lg shadow-red-600/30 active:scale-95">
           Register Interest →
         </button>
