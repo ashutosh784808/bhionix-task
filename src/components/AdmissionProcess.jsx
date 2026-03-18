@@ -36,7 +36,6 @@ const AdmissionProcess = () => {
     <section className="bg-white py-24 px-6 lg:px-20 text-[#0A0E17]">
       <div className="container mx-auto grid lg:grid-cols-2 gap-20 items-center">
         
-        {/* LEFT CONTENT */}
         <div className="space-y-10">
           <div className="inline-block px-4 py-1 rounded-full border border-red-100 bg-red-50 text-[10px] font-bold text-[#E21D26] uppercase tracking-widest">
             Admission Process 2025
@@ -51,9 +50,7 @@ const AdmissionProcess = () => {
             We've simplified our admission process to help you focus on what matters most—your future. Applications are now open for the academic year 2025-26.
           </p>
 
-          {/* Vertical Steps */}
           <div className="space-y-0 relative">
-            {/* The vertical line connecting icons */}
             <div className="absolute left-7 top-10 bottom-10 w-[2px] bg-gray-100 -z-0"></div>
             
             {steps.map((step, idx) => (
@@ -74,9 +71,7 @@ const AdmissionProcess = () => {
           </button>
         </div>
 
-        {/* RIGHT CONTENT - OVERLAPPING IMAGE & CARD */}
         <div className="relative">
-          {/* Main Graduation Image */}
           <div className="rounded-[3rem] overflow-hidden shadow-2xl relative z-0 aspect-[4/5] lg:aspect-auto lg:h-[650px]">
             <img 
               src="/assets/Girl.png" 
@@ -85,7 +80,6 @@ const AdmissionProcess = () => {
             />
           </div>
 
-          {/* Overlapping Scholarship Card */}
           <div className="absolute -bottom-10 -left-10 lg:-left-20 bg-white p-8 lg:p-12 rounded-[2.5rem] shadow-[0_32px_64px_-16px_rgba(0,0,0,0.1)] z-10 max-w-[400px] border border-gray-50 animate-bounce-slow">
             <div className="flex items-start gap-4 mb-6">
               <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center text-white text-2xl">
@@ -101,7 +95,6 @@ const AdmissionProcess = () => {
             </p>
           </div>
 
-          {/* Calculator Floating Icon from image */}
           <div className="absolute top-10 -right-4 bg-white p-4 rounded-2xl shadow-xl z-20 text-blue-600 border border-gray-100">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
