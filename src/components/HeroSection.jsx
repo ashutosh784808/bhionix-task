@@ -4,7 +4,6 @@ import Stat from './Stat';
 const HeroSection = () => {
   return (
     <section className="grid lg:grid-cols-2 gap-16 items-center">
-      {/* LEFT CONTENT */}
       <div className="space-y-10 animate-in fade-in slide-in-from-left duration-1000">
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-university-red/20 bg-university-red/5 text-[10px] font-black tracking-[0.2em] uppercase text-university-red">
           <span className="relative flex h-2 w-2">
@@ -23,7 +22,6 @@ const HeroSection = () => {
           Bennett University offers a trans-disciplinary curriculum designed to shape the leaders of tomorrow.
         </p>
 
-        {/* Stats Row */}
         <div className="pt-10 flex flex-wrap gap-12 border-t border-white/5">
           <Stat icon="🎓" value="#1" label="Emerging University" />
           <Stat icon="📊" value="100%" label="Placement Record" />
@@ -31,9 +29,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* RIGHT CONTENT */}
       <div className="relative group">
-        {/* Decorative Background Glow for Form */}
         <div className="absolute -inset-4 bg-gradient-to-tr from-university-red/20 to-blue-500/10 rounded-[40px] blur-3xl opacity-20 group-hover:opacity-40 transition-opacity duration-700"></div>
         <EnquiryForm />
       </div>
